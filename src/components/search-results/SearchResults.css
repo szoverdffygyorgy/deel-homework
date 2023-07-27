@@ -6,3 +6,14 @@
   padding-inline-start: 0;
   margin-block-start: 5px;
 }
+
+.no-results-list-item {
+  width: 100%;
+  height: 40px;
+  padding: 10px 0;
+  color: gray;
+  text-align: center;
+  font-style: italic;
+  cursor: default;
+  user-select: none;
+}
