@@ -1,0 +1,8 @@
+.search-results {
+  width: 170px;
+  border: 1px solid black;
+  border-radius: 5px;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin-block-start: 5px;
+}
