@@ -2,7 +2,7 @@ import API_URL from "../constants/apiUrl";
 import FALLBACK_NAMES from "../constants/fallbackNames";
 
 // In case the or internet connection is off defer to an in memory set of names
-const getNames = async (count = 20): Promise<string[]> => {
+const fetchNames = async (count = 20): Promise<string[]> => {
   try {
     const response = await fetch(API_URL, {
       method: "POST",
@@ -15,4 +15,4 @@ const getNames = async (count = 20): Promise<string[]> => {
   }
 };
 
-export default getNames;
+export default fetchNames;
