@@ -1,8 +1,13 @@
-import API_URL from "../constants/apiUrl";
-import FALLBACK_NAMES from "../constants/fallbackNames";
+import {
+  API_URL,
+  DEFAULT_NAME_FETCH_COUNT,
+  FALLBACK_NAMES,
+} from "../constants/constants";
 
 // In case the API or the internet connection is off defer to an in memory set of names
-const fetchNames = async (count = 20): Promise<string[]> => {
+const fetchNames = async (
+  count = DEFAULT_NAME_FETCH_COUNT
+): Promise<string[]> => {
   try {
     const formData = new FormData();
     formData.append("type", "fullname");

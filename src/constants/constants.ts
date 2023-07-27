@@ -1,4 +1,10 @@
-const FALLBACK_NAMES: string[] = [
+export const API_URL = "https://randommer.io/Name";
+
+export const DEFAULT_MOCK_SEARCH_TIME = 50;
+
+export const DEFAULT_NAME_FETCH_COUNT = 20;
+
+export const FALLBACK_NAMES: string[] = [
   "Farhan Moniz",
   "Medha Mcalpine",
   "Anakin Boykin",
@@ -20,5 +26,3 @@ const FALLBACK_NAMES: string[] = [
   "Karma Tilley",
   "Aziyah Falcone",
 ];
-
-export default FALLBACK_NAMES;
